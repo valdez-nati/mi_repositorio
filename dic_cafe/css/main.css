@@ -1,0 +1,209 @@
+@charset "utf-8";
+html {
+  height: 100%;
+  background-image: url("../images/sample_menu_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  font-size: 18px;
+}
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+li {
+  list-style: none;
+}
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+div,li {
+  box-sizing: border-box;
+}
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.section_inner {
+  padding: 50px 10% 30px;
+  flex: 0 0 60%;
+  
+}
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+}
+.key h1{
+  font-size: 2.5rem;
+}
+.section_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: space-between; /* Espacio entre los elementos, centrando el título en la parte superior y el subtítulo en la parte inferior */
+    height: 200px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+
+.key_section_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.contenido {
+    flex: 0 0 60%;
+}
+.pancake-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Alinea los elementos en fila */
+}
+
+.pancake-item {
+  background-color: #fff;
+  width: 49%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px; /* Espacio entre los cuadrados */
+}
+
+.pancake-item img {
+  width: 55%;
+  margin-right: 10px;
+}
+
+.pancake-details {
+  flex: 1;
+}
+
+/* Opcional: Estilos para el texto y las imágenes */
+h2, p {
+   
+  font-size: 18px;
+  margin-bottom: 5px; 
+}
+
+/* Opcional: Estilos para las imágenes */
+img {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Opcional: Agrega un borde a los cuadrados */
+.pancake-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea */
+}
+
+.menu-item {
+  flex-basis: 100%; /* Ancho de los cuadrados */
+  margin-right: 20px;
+  margin-bottom: 20px; /* Espacio entre los cuadrados */
+}
+
+.menu-item-content {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea */
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-info {
+  flex-basis: 50%; /* Cada "menu-info" toma el 50% del ancho del cuadro */
+  display: flex;
+  align-items: center;
+}
+
+.coffee_menu_image {
+  width: 20%; /* Ajustar el tamaño de la imagen según sea necesario */
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.menu-details {
+  flex: 1;
+}
+
+/* Opcional: Estilos para el texto */
+h2, p {
+  margin: 0;
+  width: 80%;
+}
+dl {
+  width: 80%;
+  margin: 0 auto; /* Centrar los elementos en el contenedor */
+}
+
+/* Opcional: Estilos adicionales para los términos y las definiciones */
+dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+dd {
+  margin-bottom: 20px;
+}
+
