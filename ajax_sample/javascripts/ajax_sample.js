@@ -1,20 +1,18 @@
 let number = 0;
-let data = [];
+let data = null;
+let dataLoaded = false;
 const button = document.getElementById('btn');
 const titleArea = document.getElementById("title");
 const contentArea = document.getElementById("content");
 const videoArea = document.getElementById("video");
 
 async function fetchData() {
-  console.log('kjhmgfb');
-  if (data) {
-    console.log('kjhmgfb');
+  if (!dataLoaded) {
     try {
-      
       const response = await fetch('ajax.json');
       data = await response.json();
+      dataLoaded = true;
     } catch (error) {
-      console.log('kjhmgfb');
       console.error('Error al recuperar los datos:', error);
     }
   }
@@ -26,13 +24,10 @@ function changeVideo() {
     return;
   }
 
-  // Verificar si el número está dentro del rango válido de índices
   if (number >= 0 && number < data.length) {
     const item = data[number];
     titleArea.textContent = item.title;
     contentArea.textContent = item.content;
-
-    // Establecer la URL del video en el atributo src del iframe
     videoArea.src = item.url;
 
     number = (number + 1) % data.length;
